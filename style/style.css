@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/miama-nueva');
 
 /* Shared Style */
 
@@ -16,6 +17,16 @@ body {
     margin: 0 auto;
 }
 
+.btn-primary {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+    padding: 14px 40px 14px 40px;
+    border-radius: 42px;
+    border: none;
+    cursor: pointer;
+}
+
 /* Color's */
 
 .bg-primary {
@@ -24,7 +35,7 @@ body {
 
 /* Header Section Style */
 .header-section {
-    background: linear-gradient(180.00deg, rgb(17, 17, 17), rgba(119, 119, 119, 0) 100%);
+    background: linear-gradient(180deg, rgb(17, 17, 17), rgba(119, 119, 119, 119) 100%);
     padding-top: 3.25rem;
 }
 
@@ -69,7 +80,7 @@ body {
     color: #fff;
 }
 
-.menu-icon{
+.menu-icon {
     display: none;
 }
 
@@ -80,20 +91,134 @@ body {
     background-color: #E6533C;
 }
 
+/* Banner Section Style */
+.banner-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.banner-content {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-title {
+    font-size: 4.87rem;
+    color: #fff;
+    font-weight: 900;
+    margin-bottom: 1.75rem;
+}
+
+.shape {
+    font-family: 'Miama Nueva', sans-serif;
+    font-size: 4.87rem;
+    font-weight: 500;
+}
+
+.banner-description {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 400;
+    margin-bottom: 1.75rem;
+}
+
+.btn {
+    width: 600px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+}
+
+.btn-download {
+    font-size: 1rem;
+    color: #fff;
+    font-weight: 600;
+    padding: 14px 40px 14px 40px;
+    box-sizing: border-box;
+    border: 1px solid rgb(255, 255, 255);
+    background-color: transparent;
+    border-radius: 42px;
+    cursor: pointer;
+}
+
+.banner-image img {
+    width: 100%;
+}
+
+.badges {
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    backdrop-filter: blur(20px);
+    background: rgba(48, 48, 48, 0.54);
+    width: 200px;
+    height: 95px;
+    margin-top: -120px;
+    
+}
+
+.circle{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background: #E6533C;
+}
+
+.badge-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.badge-title{
+    color: #fff;
+    font-size:1.5rem ;
+    font-weight: 900;
+}
+
+.badge-description{
+    color: rgba(255, 255, 255, 0.65);
+    font-size: .98rem;
+    font-weight: 400;
+}
+
+
 /* Responsive Area */
 
 /* Mobile Version */
 @media screen and (max-width:576px) {
-    
-    .single-routes{
+
+    .banner-container {
+        flex-direction: column;
+    }
+
+    .single-routes {
         display: none;
     }
-    .menu-icon{
+
+    .menu-icon {
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    /* .navbar {
-        flex-direction: column;
-    } */
+
+    /* Banner */
+    .banner-title {
+        font-size: 3rem;
+        margin-top: 20px;
+    }
+
+    .shape {
+        font-size: 3rem;
+    }
+
+    .btn {
+        width: auto;
+    }
+
 }
