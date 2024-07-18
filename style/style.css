@@ -149,39 +149,54 @@ body {
     width: 100%;
 }
 
-.badges {
+.badges-1 {
     box-sizing: border-box;
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 12px;
     backdrop-filter: blur(20px);
     background: rgba(48, 48, 48, 0.54);
-    width: 200px;
-    height: 95px;
-    margin-top: -120px;
-    
+    width: 12.5rem;
+    height: 5rem;
+    position: relative;
+    right: -210px;
+    top: 210px;
 }
 
-.circle{
+.badges-2 {
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    backdrop-filter: blur(20px);
+    background: rgba(48, 48, 48, 0.54);
+    width: 12.5rem;
+    height: 5rem;
+    position: relative;
+    left: -100px;
+    bottom: 170px;
+}
+
+
+.circle {
     height: 40px;
     width: 40px;
     border-radius: 50%;
     background: #E6533C;
 }
 
-.badge-content{
+.badge-content {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 8px;
 }
 
-.badge-title{
+.badge-title {
     color: #fff;
-    font-size:1.5rem ;
+    font-size: 1.5rem;
     font-weight: 900;
 }
 
-.badge-description{
+.badge-description {
     color: rgba(255, 255, 255, 0.65);
     font-size: .98rem;
     font-weight: 400;
@@ -219,6 +234,17 @@ body {
 
     .btn {
         width: auto;
+    }
+
+    /* Banner Badges */
+    .badges-1 {
+        right: -200px;
+        top: 150px;
+    }
+
+    .badges-2 {
+        left: -20px;
+        bottom: 270px;
     }
 
 }
