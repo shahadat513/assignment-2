@@ -29,6 +29,10 @@ body {
 
 /* Color's */
 
+.bg-black{
+    background-color: #111111;
+}
+
 .bg-primary {
     background-color: #E6533C;
 }
@@ -202,7 +206,71 @@ body {
     font-weight: 400;
 }
 
+/* Habit Section Area */
+.habit-container{
+    padding-bottom: 100px;
+}
 
+.habit-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 650px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.section-title{
+    color:#fff;
+    font-size: 3rem ;
+    font-weight: 900;
+    margin-bottom: 14px;
+}
+
+.section-description{
+    color:rgba(255, 255, 255, 0.5);
+    font-size: .95rem;
+    font-weight: 400;
+    margin-bottom: 58px;
+    
+}
+
+.habit-box{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 80px;
+}
+
+.single-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 15rem;
+}
+
+.single-box img{
+    border-radius: 50%;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    margin-bottom: 30px;
+}
+
+.box-title{
+    color: #fff;
+    font-size: 1.12rem;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.box-description{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: .95rem;
+    font-weight: 400;
+    text-align: center;
+}
 /* Responsive Area */
 
 /* Mobile Version */
@@ -245,6 +313,17 @@ body {
     .badges-2 {
         left: -20px;
         bottom: 270px;
+    }
+
+    /* Habit Section */
+
+    .single-box{
+        margin: 0 auto;
+        margin-bottom: 40px;
+    }
+    .habit-box{
+        grid-template-columns: 1fr;
+        gap: 40px;
     }
 
 }
