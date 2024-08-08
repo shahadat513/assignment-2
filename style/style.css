@@ -434,6 +434,75 @@ form select{
     color: rgba(255, 255, 255, 0.5);
 }
 
+/* Unique Section Style */
+.unique-section{
+    position: relative;
+    background-image: url(../assets/11.jpg);
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+.unique-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.unique-content{
+    position: relative;
+    color: white;
+    z-index: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 140px;
+}
+
+.unique-title{
+    font-size: 2.5rem;
+    color: #FFFFFF;
+    font-weight: 800;
+    padding-bottom: 1.3rem;
+}
+
+.section-description{
+    color:#FFFFFF90;
+    text-align: center;
+}
+
+.unique-btn input{
+    padding: 14px 60px 14px 60px;
+    border-radius: 42px;
+    border: none;
+    cursor: pointer;
+}
+
+.unique-btn-btn{
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+    padding: 14px 40px 14px 40px;
+    border-radius: 42px;
+    border: none;
+    cursor: pointer;
+}
+
+.unique-btn input::placeholder{
+    text-align: left;
+    align-items: start;
+}
+
+
 /* Footer Section Style */
 footer {
     background-color: #222222;
@@ -527,6 +596,10 @@ hr{
         flex-direction: column;
     }
 
+    .section-title{
+        font-size: 2rem;
+    }
+
     .single-routes {
         display: none;
     }
@@ -595,7 +668,7 @@ hr{
     }
 
     .run-content>.section-title {
-        font-size: 2.80rem;
+        font-size: 2rem;
     }
 
 
@@ -620,6 +693,43 @@ hr{
 
     .select-last{
         width: 21.2rem;
+    }
+
+    /* Unique Section */
+    .unique-section{
+        width: auto;
+        height: auto;
+        
+    }
+
+    .unique-content{
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        top: 10px;
+    }
+
+    .unique-title{
+        font-size: 1.5rem;
+        padding-bottom: .5rem;
+    }
+
+    .section-description{
+        font-size: .5rem;
+    }
+
+    .unique-btn input{
+        padding: .6rem;
+        border-radius: 42px;
+        border: none;
+        cursor: pointer;
+    }
+
+    .unique-btn-btn{
+        padding: .6rem;
+        font-size: .8rem;
     }
 
     /* Footer */
